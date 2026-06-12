@@ -7,44 +7,44 @@ import { useAvatar } from '../../hooks/useAvatar';
 
 // ─── SVG Icons ────────────────────────────────────────────────────────────
 export const BoltIcon = ({ size = 20, color = 'currentColor', fill = 'none' }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width={size} height={size}>
+  <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} strokeLinecap="square" strokeLinejoin="miter" width={size} height={size}>
     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill={fill} />
   </svg>
 );
 
 export const BookIcon = ({ size = 20, color = 'currentColor', fill = 'none' }) => (
-  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2} width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2.5} strokeLinecap="square" strokeLinejoin="miter" width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill={fill !== 'none' ? fill : 'currentColor'} fillOpacity={0.2} />
+    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" fill={fill !== 'none' ? fill : 'currentColor'} fillOpacity={1} />
   </svg>
 );
 
 export const FireIcon = ({ size = 20, color = 'currentColor', fill = 'none' }) => (
-  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2} width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2.5} strokeLinecap="square" strokeLinejoin="miter" width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
     <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" fill={fill !== 'none' ? fill : 'currentColor'} />
   </svg>
 );
 
 export const TrophyIcon = ({ size = 20, color = 'currentColor', fill = 'none' }) => (
-  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2} width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2.5} strokeLinecap="square" strokeLinejoin="miter" width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
     <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
     <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
     <path d="M4 22h16" />
     <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34" />
-    <path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z" fill={fill !== 'none' ? fill : 'currentColor'} fillOpacity={0.2} />
+    <path d="M12 2a6 6 0 0 1 6 6v5a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z" fill={fill !== 'none' ? fill : 'currentColor'} fillOpacity={1} />
   </svg>
 );
 
 export const CoinIcon = ({ size = 20, color = 'currentColor', fill = 'none' }) => (
-  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2} width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
-    <circle cx="12" cy="12" r="8" fill={fill !== 'none' ? fill : 'currentColor'} fillOpacity={0.2} />
+  <svg viewBox="0 0 24 24" fill={fill} stroke={color} strokeWidth={2.5} strokeLinecap="square" strokeLinejoin="miter" width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+    <circle cx="12" cy="12" r="8" fill={fill !== 'none' ? fill : 'currentColor'} fillOpacity={1} />
     <line x1="12" y1="1" x2="12" y2="23" />
     <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
   </svg>
 );
 
 export const ClockIcon = ({ size = 16, color = 'currentColor' }) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
+  <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} strokeLinecap="square" strokeLinejoin="miter" width={size} height={size} style={{ display: 'inline-block', verticalAlign: 'middle' }}>
     <circle cx="12" cy="12" r="10" />
     <polyline points="12 6 12 12 16 14" />
   </svg>
@@ -158,14 +158,14 @@ export const BadgeIcon = ({ name, size = 30, color = 'currentColor' }) => {
   switch (name) {
     case 'welcome':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" fill={`${color}20`} />
           <path d="M12 8v8M8 12h8" />
         </svg>
       );
     case 'consistency':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <rect x="3" y="4" width="18" height="18" rx="2" fill={`${color}20`} />
           <line x1="16" y1="2" x2="16" y2="6" />
           <line x1="8" y1="2" x2="8" y2="6" />
@@ -174,28 +174,28 @@ export const BadgeIcon = ({ name, size = 30, color = 'currentColor' }) => {
       );
     case 'wealth':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <circle cx="12" cy="12" r="8" fill={`${color}20`} />
           <path d="M12 8v8M9 10h5.5a1.5 1.5 0 0 1 0 3H12" />
         </svg>
       );
     case 'growth':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
           <polyline points="17 6 23 6 23 12" />
         </svg>
       );
     case 'planner':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill={`${color}20`} />
           <polyline points="9 22 9 12 15 12 15 22" />
         </svg>
       );
     case 'target':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <circle cx="12" cy="12" r="10" fill={`${color}20`} />
           <circle cx="12" cy="12" r="6" />
           <circle cx="12" cy="12" r="2" fill={color} />
@@ -203,13 +203,13 @@ export const BadgeIcon = ({ name, size = 30, color = 'currentColor' }) => {
       );
     case 'legendary':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <polygon points="6 3 18 3 22 9 12 21 2 9" fill={`${color}20`} />
         </svg>
       );
     case 'star':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill={`${color}20`} />
         </svg>
       );
@@ -225,27 +225,27 @@ export const SkillIcon = ({ name, size = 24, color = 'currentColor' }) => {
       return <CoinIcon size={size} color={color} fill="currentColor" />;
     case 'investing':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
           <polyline points="16 7 22 7 22 13" />
         </svg>
       );
     case 'banking':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <path d="M3 22h18M5 10v10M19 10v10M12 10v10M3 10h18M12 2L3 7h18l-9-5z" fill={`${color}20`} />
         </svg>
       );
     case 'credit':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <rect x="2" y="5" width="20" height="14" rx="2" fill={`${color}20`} />
           <line x1="2" y1="10" x2="22" y2="10" />
         </svg>
       );
     case 'estate':
       return (
-        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2} width={size} height={size}>
+        <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth={2.5} width={size} height={size}>
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" fill={`${color}20`} />
         </svg>
       );
@@ -265,14 +265,13 @@ const Badge = ({ name, earned, rarity = 'common', color = '#94B0C2' }) => {
       title={name.toUpperCase()}
       style={{
         width: 60, height: 60,
-        background: earned ? 'rgba(18,10,45,0.85)' : 'rgba(10,4,28,0.4)',
-        border: `2px solid ${earned ? border[rarity] : 'rgba(255,255,255,0.06)'}`,
-        boxShadow: earned ? glow[rarity] : 'none',
-        opacity: earned ? 1 : 0.35,
-        color: earned ? color : '#566C86',
+        background: earned ? '#D9F99D' : 'rgba(20,83,45,0.1)',
+        border: '3px solid #14532D',
+        boxShadow: earned ? '3px 3px 0 #14532D' : 'none',
+        opacity: earned ? 1 : 0.6,
       }}
     >
-      {earned ? <BadgeIcon name={name} color={color} size={32} /> : <Lock size={20} />}
+      {earned ? <BadgeIcon name={name} color="#14532D" size={32} /> : <Lock size={20} color="#14532D" />}
     </motion.div>
   );
 };
@@ -342,315 +341,147 @@ const ProfileHeader = ({
 
   // All badges locked for new user
   const BADGES = [
-    { name: 'welcome',     earned: false, rarity: 'uncommon',  color: '#00D4C8', label: 'Welcome' },
-    { name: 'consistency', earned: false, rarity: 'rare',      color: '#8B5CF6', label: 'Consistency' },
-    { name: 'wealth',      earned: false, rarity: 'common',    color: '#FFCD75', label: 'Wealth' },
-    { name: 'growth',      earned: false, rarity: 'uncommon',  color: '#00D4C8', label: 'Growth' },
+    { name: 'welcome',     earned: false, rarity: 'uncommon',  color: '#14532D', label: 'Welcome' },
+    { name: 'consistency', earned: false, rarity: 'rare',      color: '#14532D', label: 'Consistency' },
+    { name: 'wealth',      earned: false, rarity: 'common',    color: '#14532D', label: 'Wealth' },
+    { name: 'growth',      earned: false, rarity: 'uncommon',  color: '#14532D', label: 'Growth' },
   ];
-
-  const cardStyle = {
-    background: 'rgba(18,10,45,0.95)',
-    border: '2px solid #8B5CF6',
-    backdropFilter: 'blur(10px)',
-  };
 
   return (
     <>
-      <div className="w-full max-w-xl mx-auto flex flex-col gap-7">
+      {/* Container: Light pop-art neo-brutalist card */}
+      <div className="w-full max-w-5xl mx-auto rounded-3xl relative overflow-visible" style={{ background: '#F4F4F5', border: '4px solid #18181B', boxShadow: '8px 8px 0 #18181B', marginTop: 48, paddingBottom: 24, marginBottom: 40 }}>
+        
+        {/* Confetti for when you level up / open profile */}
+        <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none" style={{ zIndex: 99 }}>
+            <Confetti active={showConfetti} />
+        </div>
 
-        {/* ────────────────────── 1. PROFILE CARD ────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="relative w-full rounded-2xl overflow-hidden"
-          style={{
-            border: '2px solid #8B5CF6',
-            background: 'rgba(18,10,45,0.95)',
-            backdropFilter: 'blur(12px)',
-            boxShadow: '0 0 32px rgba(139,92,246,0.3)',
-          }}
-        >
-          <Confetti active={showConfetti} />
-
-          {/* Banner */}
-          <div style={{
-            height: 110,
-            background: 'linear-gradient(135deg, #1a0540 0%, #2d1060 50%, #0d2040 100%)',
-            position: 'relative',
-            overflow: 'hidden',
-          }}>
-            {/* Pixelated star particles */}
-            {[...Array(22)].map((_, i) => (
-              <div key={i} style={{
-                position: 'absolute',
-                width: i % 5 === 0 ? 3 : 2,
-                height: i % 5 === 0 ? 3 : 2,
-                background: '#c4b5fd',
-                opacity: 0.2 + (i % 4) * 0.12,
-                top: `${(i * 31 + 7) % 85}%`,
-                left: `${(i * 47 + 11) % 96}%`,
-              }} />
-            ))}
-            {/* XP strip at banner bottom */}
-            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 4, background: 'rgba(0,0,0,0.3)' }}>
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${(xp / maxXp) * 100}%` }}
-                transition={{ duration: 1.3 }}
-                style={{ height: '100%', background: 'linear-gradient(90deg, #8B5CF6, #c4b5fd)' }}
-              />
-            </div>
+        {/* ────────────────────── BANNER ────────────────────── */}
+        {/* Solid purple top banner */}
+        <div className="w-full rounded-t-[20px] relative" style={{ height: 160, background: '#A78BFA', borderBottom: '4px solid #18181B', overflow: 'hidden' }}>
+          {/* subtle pattern for texture */}
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#8B5CF6 20%, transparent 20%)', backgroundSize: '16px 16px', opacity: 0.4 }}></div>
+          
+          <div className="absolute right-8 bottom-6 text-right">
+             <h1 className="text-4xl font-black" style={{ color: '#FAFAFA', textShadow: '4px 4px 0 #4C1D95', fontFamily: 'Inter, sans-serif' }}>{username}</h1>
+             <div className="inline-flex items-center gap-2 px-3 py-1 mt-3 rounded-xl" style={{ background: '#581C87', border: '2px solid #2E1065', boxShadow: '2px 2px 0 #2E1065' }}>
+                <SeedlingIcon size={16} color={rank.color} />
+                <span className="font-pixel text-white" style={{ fontSize: 10 }}>{rank.label}</span>
+             </div>
           </div>
+        </div>
 
-          {/* Avatar + info */}
-          <div style={{ padding: '0 24px 24px' }}>
-            {/* Avatar overlapping banner */}
-            <div className="flex items-end justify-between" style={{ marginTop: -42, marginBottom: 16 }}>
-              <div className="relative cursor-pointer" onClick={() => setIsEditingAvatar(true)}>
-                {/* Goal ring behind avatar */}
-                <div style={{ position: 'absolute', inset: -8, zIndex: 0 }}>
-                  <GoalRing current={0} target={5} size={100} />
-                </div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  style={{
-                    width: 80, height: 80,
-                    border: '3px solid #8B5CF6',
-                    background: '#12123A',
-                    borderRadius: 16,
-                    boxShadow: '0 0 20px rgba(139,92,246,0.5)',
-                    overflow: 'hidden',
-                    imageRendering: 'pixelated',
-                    position: 'relative',
-                    zIndex: 1,
-                  }}
-                >
-                  <PixelAvatar config={avatarConfig} size={74} />
-                  <div
-                    className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"
-                    style={{ background: 'rgba(0,0,0,0.55)' }}
-                  >
-                    <Pen size={16} color="#c4b5fd" />
-                  </div>
-                </motion.div>
+        {/* ────────────────────── AVATAR ────────────────────── */}
+        {/* Top-left overlapping avatar */}
+        <div className="absolute" style={{ top: -32, left: 32, zIndex: 50 }}>
+           <motion.div 
+             whileHover={{ scale: 1.05 }}
+             className="relative cursor-pointer rounded-full flex items-center justify-center bg-[#D9F99D]" 
+             style={{ width: 120, height: 120, border: '4px solid #18181B', boxShadow: '4px 4px 0 #18181B' }}
+             onClick={() => setIsEditingAvatar(true)}
+           >
+              {/* Pink silhouette proxy using AvatarCustomizer data */}
+              <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center pt-4 bg-[#FBCFE8]">
+                 <PixelAvatar config={avatarConfig} size={90} />
+              </div>
+              
+              {/* Edit icon overlay */}
+              <div className="absolute -bottom-2 -right-2 w-11 h-11 rounded-full flex items-center justify-center" style={{ background: '#F472B6', border: '3px solid #18181B', boxShadow: '2px 2px 0 #18181B' }}>
+                 <Pen size={18} color="#18181B" />
+              </div>
+           </motion.div>
+        </div>
+
+        {/* ────────────────────── 2-COLUMN LAYOUT ────────────────────── */}
+        <div className="p-6 flex flex-col md:flex-row gap-6 relative z-10">
+           
+           {/* LEFT COLUMN */}
+           <div className="flex-1 flex flex-col gap-6">
+              
+              {/* Top Green Block: Achievements */}
+              <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="rounded-2xl p-6" style={{ background: '#84CC16', border: '4px solid #18181B', boxShadow: '6px 6px 0 #18181B' }}>
+                 <div className="flex justify-between items-center mb-5">
+                    <h3 className="font-black text-2xl uppercase" style={{ color: '#14532D', textShadow: '2px 2px 0 rgba(255,255,255,0.4)' }}>Achievements</h3>
+                    <span className="font-bold text-sm cursor-pointer hover:underline" style={{ color: '#14532D' }}>View all &gt;</span>
+                 </div>
+                 <div className="flex items-center justify-between gap-2">
+                    {BADGES.map((b, i) => (
+                      <div key={i} className="flex flex-col items-center gap-2">
+                         <div className="w-16 h-16 rounded-2xl flex items-center justify-center" style={{ background: b.earned ? '#D9F99D' : 'rgba(20,83,45,0.1)', border: '3px solid #14532D', boxShadow: b.earned ? '3px 3px 0 #14532D' : 'none', opacity: b.earned ? 1 : 0.6 }}>
+                            {b.earned ? <BadgeIcon name={b.name} color="#14532D" size={32} /> : <Lock size={24} color="#14532D" />}
+                         </div>
+                         <span className="font-bold text-center uppercase tracking-wide" style={{ fontSize: 10, color: '#14532D' }}>{b.label}</span>
+                      </div>
+                    ))}
+                 </div>
+              </motion.div>
+
+              {/* Middle Grey Blocks: Statistics Grid */}
+              <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { Icon: <FireIcon size={32} color="#EA580C" fill="currentColor" />, label: 'Day Streak', value: '0', color: '#EA580C' },
+                    { Icon: <BoltIcon size={32} color="#EAB308" fill="currentColor" />, label: 'Total XP', value: <CountUp to={xp} />, color: '#EAB308' },
+                    { Icon: <TrophyIcon size={32} color="#0D9488" fill="currentColor" />, label: 'League', value: '--', color: '#0D9488' },
+                    { Icon: <BookIcon size={32} color="#7E22CE" fill="currentColor" />, label: 'Quests', value: '0', color: '#7E22CE' },
+                  ].map((s, i) => (
+                    <motion.div key={i} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 + i*0.05 }} className="rounded-2xl p-6 flex items-center gap-4" style={{ background: '#A1A1AA', border: '4px solid #18181B', boxShadow: '4px 4px 0 #18181B' }}>
+                       <div className="p-3 rounded-full shrink-0" style={{ background: 'rgba(24,24,27,0.1)' }}>{s.Icon}</div>
+                       <div>
+                          <div className="font-black text-3xl" style={{ color: '#18181B' }}>{s.value}</div>
+                          <div className="font-bold uppercase tracking-wider" style={{ fontSize: 11, color: '#3F3F46' }}>{s.label}</div>
+                       </div>
+                    </motion.div>
+                  ))}
               </div>
 
-              {/* Edit button */}
-              <button
-                onClick={() => setIsEditingAvatar(true)}
-                className="font-pixel pixel-btn"
-                style={{
-                  fontSize: 10,
-                  padding: '8px 14px',
-                  borderRadius: 12,
-                  border: '2px solid #701A75',
-                  color: '#FFF',
-                  background: '#D946EF',
-                  boxShadow: '4px 4px 0 #701A75',
-                  cursor: 'pointer',
-                  marginBottom: 4,
-                }}
-              >
-                {'> EDIT '}<Cursor />
-              </button>
-            </div>
+              {/* Bottom Green Block: Activity Heatmap */}
+              <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }} className="rounded-2xl p-6" style={{ background: '#84CC16', border: '4px solid #18181B', boxShadow: '6px 6px 0 #18181B' }}>
+                 <div className="flex justify-between items-center mb-5">
+                    <h3 className="font-black text-2xl uppercase" style={{ color: '#14532D', textShadow: '2px 2px 0 rgba(255,255,255,0.4)' }}>Activity</h3>
+                 </div>
+                 {/* Custom Heatmap for light theme */}
+                 <div className="flex gap-2 overflow-x-auto pb-2">
+                    {Array.from({ length: 14 }, (_, w) => (
+                      <div key={w} className="flex flex-col gap-2">
+                        {Array.from({ length: 7 }, (_, d) => {
+                          const intensity = 0; // Empty for new user
+                          const bg = intensity === 0 ? 'rgba(20,83,45,0.15)' : '#D9F99D';
+                          return <div key={d} style={{ width: 16, height: 16, borderRadius: 4, background: bg, border: intensity === 0 ? 'none' : '2px solid #14532D' }} />
+                        })}
+                      </div>
+                    ))}
+                 </div>
+              </motion.div>
 
-            {/* Username */}
-            <h1 className="text-2xl font-black text-white" style={{ marginBottom: 8 }}>{username}</h1>
+           </div>
 
-            {/* Rank badge */}
-            <div
-              className="font-pixel inline-flex items-center gap-1.5 rounded-lg"
-              style={{
-                fontSize: 9,
-                color: rank.color,
-                background: `${rank.color}15`,
-                border: `1px solid ${rank.color}35`,
-                padding: '4px 10px',
-                marginBottom: 14,
-              }}
-            >
-              <SeedlingIcon size={14} color={rank.color} />
-              {rank.label}
-            </div>
+           {/* RIGHT COLUMN */}
+           <div className="w-full md:w-[340px] flex flex-col">
+              {/* Tall Purple Block: Friends */}
+              <motion.div initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }} className="rounded-2xl p-6 flex-1 flex flex-col" style={{ background: '#C4B5FD', border: '4px solid #18181B', boxShadow: '6px 6px 0 #18181B' }}>
+                 <div className="flex justify-between items-center mb-6">
+                    <h3 className="font-black text-2xl uppercase" style={{ color: '#4C1D95', textShadow: '2px 2px 0 rgba(255,255,255,0.4)' }}>Friends</h3>
+                    <span className="font-bold text-sm cursor-pointer hover:underline" style={{ color: '#4C1D95' }}>Find &gt;</span>
+                 </div>
 
-            {/* Followers / Following */}
-            <div className="flex items-center gap-4">
-              <span className="text-sm">
-                <span className="font-black text-white">{followers}</span>{' '}
-                <span style={{ color: '#566C86' }}>followers</span>
-              </span>
-              <span className="text-sm">
-                <span className="font-black text-white">{following}</span>{' '}
-                <span style={{ color: '#566C86' }}>following</span>
-              </span>
-            </div>
-          </div>
-        </motion.div>
+                 {/* Empty state */}
+                 <div className="flex-1 flex flex-col items-center justify-center p-6 rounded-2xl" style={{ border: '4px dashed #7C3AED', background: 'rgba(255,255,255,0.3)' }}>
+                    <div className="w-20 h-20 rounded-full flex items-center justify-center mb-6" style={{ background: '#A78BFA', border: '4px solid #4C1D95', boxShadow: '4px 4px 0 #4C1D95' }}>
+                       <svg viewBox="0 0 24 24" fill="none" stroke="#FAFAFA" strokeWidth={2.5} width={40} height={40}>
+                         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                         <circle cx="9" cy="7" r="4" />
+                         <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                       </svg>
+                    </div>
+                    <p className="font-black text-center text-xl uppercase" style={{ color: '#4C1D95' }}>No friends yet!</p>
+                    <p className="font-bold text-center text-sm mt-2 leading-relaxed" style={{ color: '#5B21B6' }}>Add friends to compete on the leaderboard.</p>
+                 </div>
+              </motion.div>
+           </div>
 
-        {/* ────────────────────── 2. STATISTICS GRID ────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="flex flex-col gap-3"
-        >
-          <h3 className="text-white font-black text-lg px-1">Statistics</h3>
-          <div className="grid grid-cols-2 gap-3">
-            {[
-              {
-                Icon: <FireIcon size={24} color="#F97316" fill="currentColor" />,
-                label: 'Day Streak',
-                value: '0',
-                color: '#F97316',
-                bg: 'rgba(249,115,22,0.15)',
-                border: '#F97316',
-              },
-              {
-                Icon: <BoltIcon size={24} color="#FFCD75" fill="currentColor" />,
-                label: 'Total XP',
-                value: <CountUp to={xp} />,
-                color: '#FFCD75',
-                bg: 'rgba(255,205,117,0.15)',
-                border: '#FFCD75',
-              },
-              {
-                Icon: <TrophyIcon size={24} color="#00D4C8" fill="currentColor" />,
-                label: 'League',
-                value: '--',
-                color: '#00D4C8',
-                bg: 'rgba(0,212,200,0.15)',
-                border: '#00D4C8',
-              },
-              {
-                Icon: <BookIcon size={24} color="#c4b5fd" fill="currentColor" />,
-                label: 'Quests Done',
-                value: '0',
-                color: '#c4b5fd',
-                bg: 'rgba(139,92,246,0.15)',
-                border: '#8B5CF6',
-              },
-            ].map((s, i) => (
-              <div
-                key={i}
-                className="p-4 rounded-2xl flex items-center gap-4"
-                style={{
-                  background: s.bg,
-                  border: `2px solid ${s.border}`,
-                  boxShadow: `2px 2px 0 ${s.border}40`,
-                  backdropFilter: 'blur(10px)',
-                }}
-              >
-                <div className="flex items-center justify-center shrink-0">{s.Icon}</div>
-                <div>
-                  <div className="font-black text-xl" style={{ color: s.color, fontFamily: 'Inter, sans-serif' }}>
-                    {s.value}
-                  </div>
-                  <div className="font-pixel" style={{ fontSize: 8, color: '#7B8DB0' }}>
-                    {s.label}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* ────────────────────── 3. ACHIEVEMENTS ROW ────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
-          className="flex flex-col gap-3"
-        >
-          <div className="flex items-center justify-between px-1">
-            <h3 className="text-white font-black text-lg">Achievements</h3>
-            <span className="text-sm font-bold text-violet-400 cursor-pointer hover:underline">View all</span>
-          </div>
-          <div
-            className="p-5 rounded-2xl"
-            style={{
-              ...cardStyle,
-              border: '2px solid #FFCD75',
-              boxShadow: '4px 4px 0 rgba(255,205,117,0.3)',
-            }}
-          >
-            <div className="flex items-center justify-between gap-3">
-              {BADGES.map((b, i) => (
-                <div key={i} className="flex flex-col items-center gap-2">
-                  <Badge {...b} />
-                  <span className="font-pixel text-center" style={{ fontSize: 8, color: '#566C86', maxWidth: 64 }}>
-                    {b.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-
-        {/* ────────────────────── 4. ACTIVITY HEATMAP ────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="flex flex-col gap-3"
-        >
-          <div className="flex items-center justify-between px-1">
-            <h3 className="text-white font-black text-lg">Activity</h3>
-            {/* Color legend */}
-            <div className="flex items-center gap-1.5">
-              <span className="font-pixel" style={{ fontSize: 7, color: '#566C86', marginRight: 4 }}>Less</span>
-              {[
-                'rgba(255,255,255,0.04)',
-                'rgba(0,212,200,0.25)',
-                'rgba(0,212,200,0.55)',
-                '#00D4C8',
-              ].map((c, i) => (
-                <div key={i} style={{ width: 10, height: 10, borderRadius: 2, background: c }} />
-              ))}
-              <span className="font-pixel" style={{ fontSize: 7, color: '#566C86', marginLeft: 4 }}>More</span>
-            </div>
-          </div>
-          <div className="p-5 rounded-2xl" style={{ ...cardStyle, border: '2px solid #00D4C8', boxShadow: '4px 4px 0 rgba(0,212,200,0.3)' }}>
-            <ActivityHeatmap data={null} />
-          </div>
-        </motion.div>
-
-        {/* ────────────────────── 5. FRIENDS SECTION ────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="flex flex-col gap-3"
-        >
-          <div className="flex items-center justify-between px-1">
-            <h3 className="text-white font-black text-lg">Friends</h3>
-            <span className="text-sm font-bold text-violet-400 cursor-pointer hover:underline">Find</span>
-          </div>
-          <div className="p-6 rounded-2xl" style={{ ...cardStyle, border: '2px solid #8B5CF6', boxShadow: '4px 4px 0 rgba(139,92,246,0.3)' }}>
-            {/* Empty state */}
-            <div
-              className="flex items-center justify-center rounded-xl"
-              style={{
-                border: '2px dashed rgba(139,92,246,0.25)',
-                padding: '32px 16px',
-              }}
-            >
-              <div className="flex flex-col items-center gap-3">
-                {/* People icon */}
-                <svg viewBox="0 0 24 24" fill="none" stroke="#566C86" strokeWidth={1.5} width={32} height={32}>
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-                <p className="font-pixel text-center" style={{ fontSize: 9, color: '#566C86' }}>
-                  Add friends to compete
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+        </div>
 
       </div>
 
