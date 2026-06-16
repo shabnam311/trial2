@@ -5,6 +5,7 @@ import DashboardPage from './pages/DashboardPage';
 import ProfilePage from './pages/ProfilePage';
 import AvatarSetupPage from './pages/AvatarSetupPage';
 import LandingPage from './pages/landing/LandingPage';
+import SignInPage from './pages/SignInPage';
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<LandingPage />} />
+
+        {/* Auth */}
+        <Route path="/signin" element={<SignInPage />} />
+        <Route path="/signup" element={<SignInPage />} />
 
         {/* Existing App */}
         <Route path="/setup-avatar" element={<AvatarSetupPage />} />
