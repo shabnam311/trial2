@@ -1,6 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from '../common/Logo';
 
 const TopBar = () => {
   const location = useLocation();
@@ -27,13 +28,7 @@ const TopBar = () => {
         {/* Logo */}
         <div className="flex flex-col items-end">
           <div className="flex items-center gap-2">
-            <div className="grid grid-cols-2 gap-0.5">
-              <div className="w-2.5 h-2.5 rounded-full bg-piggy-teal"></div>
-              <div className="w-2.5 h-2.5 rounded-full bg-piggy-blue"></div>
-              <div className="w-2.5 h-2.5 rounded-full bg-pink-500"></div>
-              <div className="w-2.5 h-2.5 rounded-full bg-purple-500"></div>
-            </div>
-            <span className="text-xl font-bold tracking-tight text-white">PiggyPath</span>
+            <Logo className="text-xl !text-white" />
           </div>
           <span className="text-[10px] text-gray-400 tracking-widest mt-0.5 mr-1 flex items-center gap-1">
             <div className="w-1 h-1 rounded-full bg-piggy-teal"></div>
