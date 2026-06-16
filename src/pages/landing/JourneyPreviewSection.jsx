@@ -10,7 +10,7 @@ const JourneyPreviewSection = () => {
         {/* 7. LEARNING JOURNEY PREVIEW */}
         <div>
           <div className="mb-16">
-            <div className="inline-block px-4 py-1.5 border-[3px] border-[#18181B] dark:border-white rounded-full bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] font-black uppercase text-xs mb-6 shadow-[#18181B] dark:shadow-[#FFFFFF]">
+            <div className="inline-block px-4 py-1.5 border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-full bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] font-black uppercase text-xs mb-6 shadow-[#18181B] dark:shadow-[#000000]">
               Your Roadmap
             </div>
             <h2 className="text-5xl md:text-6xl font-black mb-6 leading-tight uppercase">
@@ -29,8 +29,8 @@ const JourneyPreviewSection = () => {
                  <div className="w-1/5 bg-[#00E599] h-1 border-y border-[#00E599]"></div>
                  <div className="w-1/5 bg-[#00E599] h-1 border-y border-[#00E599]"></div>
                  <div className="w-1/5 bg-[#00E599] h-1 border-y border-[#00E599]"></div>
-                 <div className="w-1/5 border-t-[3px] border-dashed border-[#D4D4D8] dark:border-white h-1"></div>
-                 <div className="w-1/5 border-t-[3px] border-dashed border-[#D4D4D8] dark:border-white h-1"></div>
+                 <div className="w-1/5 border-t-[3px] border-dashed border-[#D4D4D8] dark:border-[#3F3F46] h-1"></div>
+                 <div className="w-1/5 border-t-[3px] border-dashed border-[#D4D4D8] dark:border-[#3F3F46] h-1"></div>
                </div>
 
                {[
@@ -43,7 +43,7 @@ const JourneyPreviewSection = () => {
                ].map((node, i) => (
                  <div key={node.id} className="flex flex-col items-center w-32 relative group cursor-pointer hover:-translate-y-2 transition-transform">
                    {/* Node Box */}
-                   <div className={`relative w-20 h-20 rounded-2xl border-[4px] border-[#18181B] dark:border-white flex items-center justify-center shadow-[#18181B] dark:shadow-[#FFFFFF] mb-4 z-10 transition-colors
+                   <div className={`relative w-20 h-20 rounded-2xl border-[4px] border-[#18181B] dark:border-[#3F3F46] flex items-center justify-center shadow-[#18181B] dark:shadow-[#000000] mb-4 z-10 transition-colors
                      ${node.status === 'completed' ? 'bg-[#00E599] text-[#18181B]' : 
                        node.status === 'in-progress' ? 'bg-[#8B5CF6] text-white' : 
                        'bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5]'}`}
@@ -51,7 +51,7 @@ const JourneyPreviewSection = () => {
                      {node.icon}
                      
                      {/* Number Badge */}
-                     <div className="absolute -top-3 -right-3 w-6 h-6 bg-[#18181B] dark:bg-white text-white dark:text-[#18181B] rounded-full flex items-center justify-center font-black text-[10px] border-2 border-transparent dark:border-white">
+                     <div className="absolute -top-3 -right-3 w-6 h-6 bg-[#18181B] dark:bg-white text-white dark:text-[#18181B] rounded-full flex items-center justify-center font-black text-[10px] border-2 border-transparent dark:border-[#18181B]">
                        {node.id}
                      </div>
                    </div>
@@ -62,7 +62,7 @@ const JourneyPreviewSection = () => {
                    </div>
 
                    {/* Pill */}
-                   <div className={`px-3 py-1 rounded-full border-2 border-[#18181B] dark:border-white font-black text-[10px] uppercase shadow-[2px_2px_0_#18181B] dark:shadow-[#FFFFFF]
+                   <div className={`px-3 py-1 rounded-full border-2 border-[#18181B] dark:border-[#3F3F46] font-black text-[10px] uppercase shadow-[2px_2px_0_#18181B] dark:shadow-[2px_2px_0_#000000]
                      ${node.status === 'completed' ? 'bg-[#00E599] text-[#18181B]' : 
                        node.status === 'in-progress' ? 'bg-[#8B5CF6] text-white' : 
                        'bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5]'}`}
@@ -92,9 +92,9 @@ const JourneyPreviewSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="bg-gray-100 dark:bg-[#27272A] border-[3px] border-[#18181B] dark:border-white rounded-3xl p-6 shadow-[#000] dark:shadow-[#FFFFFF] flex gap-6 items-center hover:bg-[#3F3F46] transition-colors"
+                className="bg-gray-100 dark:bg-[#27272A] border-[3px] border-[#18181B] dark:border-[#3F3F46] dark:border-white rounded-3xl p-6 shadow-[#000] dark:shadow-[#FFFFFF] flex gap-6 items-center hover:bg-[#3F3F46] transition-colors"
               >
-                 <div className="w-20 h-20 shrink-0 rounded-2xl border-[3px] border-[#18181B] dark:border-white shadow-[#000] dark:shadow-[#FFFFFF] flex items-center justify-center text-4xl" style={{ background: game.color }}>
+                 <div className="w-20 h-20 shrink-0 rounded-2xl border-[3px] border-[#18181B] dark:border-[#3F3F46] dark:border-white shadow-[#000] dark:shadow-[#FFFFFF] flex items-center justify-center text-4xl" style={{ background: game.color }}>
                    {game.icon}
                  </div>
                  <div>
@@ -113,7 +113,7 @@ const JourneyPreviewSection = () => {
                 initial={{ opacity: 0, rotate: -2, x: -50 }}
                 whileInView={{ opacity: 1, rotate: 0, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-[#F4F4F5] dark:bg-[#18181B] dark:bg-zinc-900 rounded-3xl p-6 border-[4px] border-[#18181B] dark:border-white shadow-[12px_12px_0_#8B5CF6] relative"
+                className="bg-[#F4F4F5] dark:bg-[#18181B] dark:bg-zinc-900 rounded-3xl p-6 border-[4px] border-[#18181B] dark:border-[#3F3F46] dark:border-white shadow-[12px_12px_0_#8B5CF6] relative"
              >
                 <div className="flex justify-between items-center mb-6 border-b-2 border-[#D4D4D8] dark:border-zinc-700 pb-4">
                    <div>
@@ -121,7 +121,7 @@ const JourneyPreviewSection = () => {
                      <div className="text-4xl font-black text-[#18181B] dark:text-[#F4F4F5] dark:text-white">$12,450.00</div>
                      <div className="text-[#00E599] font-bold text-sm mt-1">↑ $1,200 (10.4%) All Time</div>
                    </div>
-                   <div className="px-4 py-2 bg-[#8B5CF6] text-white font-bold rounded-xl border-2 border-[#18181B] dark:border-white shadow-[#18181B] dark:shadow-[#FFFFFF]">
+                   <div className="px-4 py-2 bg-[#8B5CF6] text-white font-bold rounded-xl border-2 border-[#18181B] dark:border-[#3F3F46] dark:border-white shadow-[#18181B] dark:shadow-[#FFFFFF]">
                      Buy / Sell
                    </div>
                 </div>
@@ -134,12 +134,12 @@ const JourneyPreviewSection = () => {
                        whileInView={{ height: `${h}%` }}
                        viewport={{ once: true }}
                        transition={{ delay: i * 0.1, duration: 0.5 }}
-                       className="flex-1 bg-[#00E599] border-2 border-[#18181B] dark:border-white rounded-t-sm"
+                       className="flex-1 bg-[#00E599] border-2 border-[#18181B] dark:border-[#3F3F46] dark:border-white rounded-t-sm"
                      />
                    ))}
                 </div>
                 <div className="space-y-3">
-                   <div className="flex justify-between items-center p-3 border-2 border-[#18181B] dark:border-white rounded-xl bg-white dark:bg-[#27272A] dark:bg-zinc-800 text-[#18181B] dark:text-[#F4F4F5] dark:text-white">
+                   <div className="flex justify-between items-center p-3 border-2 border-[#18181B] dark:border-[#3F3F46] dark:border-white rounded-xl bg-white dark:bg-[#27272A] dark:bg-zinc-800 text-[#18181B] dark:text-[#F4F4F5] dark:text-white">
                      <div className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center text-white text-xs font-bold">APPL</div>
                         <div className="font-bold">Apple Inc.</div>
@@ -184,10 +184,10 @@ const JourneyPreviewSection = () => {
                  whileHover={{ scale: 1.1, rotate: 5 }}
                  className="flex flex-col items-center gap-4"
                >
-                 <div className="w-24 h-24 rounded-full border-[4px] border-[#18181B] dark:border-white flex items-center justify-center text-5xl shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] bg-white dark:bg-[#27272A]">
+                 <div className="w-24 h-24 rounded-full border-[4px] border-[#18181B] dark:border-[#3F3F46] dark:border-white flex items-center justify-center text-5xl shadow-[4px_4px_0_#18181B] dark:shadow-[4px_4px_0_#000] bg-white dark:bg-[#27272A]">
                    {r.icon}
                  </div>
-                 <div className="font-black text-xl px-4 py-1 rounded-lg border-2 border-[#18181B] dark:border-white shadow-[#000] dark:shadow-[#FFFFFF]" style={{ backgroundColor: r.color, color: '#18181B' }}>
+                 <div className="font-black text-xl px-4 py-1 rounded-lg border-2 border-[#18181B] dark:border-[#3F3F46] dark:border-white shadow-[#000] dark:shadow-[#FFFFFF]" style={{ backgroundColor: r.color, color: '#18181B' }}>
                    {r.label}
                  </div>
                </motion.div>

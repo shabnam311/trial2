@@ -26,11 +26,11 @@ const FeaturesSection = () => {
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
-              className="bg-[#18181B] text-white border-[3px] border-[#18181B] dark:border-white rounded-3xl p-8 shadow-[8px_8px_0_#00E599] relative hover:-translate-y-2 transition-transform"
+              className="bg-[#F4F4F5] dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-3xl p-8 shadow-[8px_8px_0_#18181B] dark:shadow-[8px_8px_0_#000000] relative hover:-translate-y-2 transition-transform"
             >
-              <div className="absolute -top-6 -left-6 w-14 h-14 bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-white rounded-full flex items-center justify-center font-black text-2xl shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF]">1</div>
-              <h3 className="text-3xl font-black mb-4 mt-2 text-[#00E599]">Learn</h3>
-              <ul className="space-y-3 font-bold text-[#A1A1AA]">
+              <div className="absolute -top-6 -left-6 w-14 h-14 bg-[#00E599] border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-full flex items-center justify-center font-black text-2xl shadow-[4px_4px_0_#18181B] dark:shadow-[4px_4px_0_#000000]">1</div>
+              <h3 className="text-3xl font-black mb-4 mt-2">Learn</h3>
+              <ul className="space-y-3 font-bold text-[#3F3F46] dark:text-[#A1A1AA]">
                 <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Follow guided financial journeys.</li>
                 <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Interactive stories.</li>
                 <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Short lessons.</li>
@@ -44,15 +44,15 @@ const FeaturesSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: 0.1 }}
-              className="bg-[#18181B] text-white border-[3px] border-[#18181B] dark:border-white rounded-3xl p-8 shadow-[8px_8px_0_#00E599] relative hover:-translate-y-2 transition-transform"
+              className="bg-[#8B5CF6] text-white border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-3xl p-8 shadow-[8px_8px_0_#18181B] dark:shadow-[8px_8px_0_#000000] relative hover:-translate-y-2 transition-transform"
             >
-              <div className="absolute -top-6 -left-6 w-14 h-14 bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-white rounded-full flex items-center justify-center font-black text-2xl shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF]">2</div>
-              <h3 className="text-3xl font-black mb-4 mt-2 text-[#00E599]">Play</h3>
-              <ul className="space-y-3 font-bold text-[#A1A1AA]">
-                <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Practice through games.</li>
-                <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Solve challenges.</li>
-                <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Make financial decisions.</li>
-                <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Earn rewards.</li>
+              <div className="absolute -top-6 -left-6 w-14 h-14 bg-[#FFCD75] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-full flex items-center justify-center font-black text-2xl shadow-[4px_4px_0_#18181B] dark:shadow-[4px_4px_0_#000000]">2</div>
+              <h3 className="text-3xl font-black mb-4 mt-2">Play</h3>
+              <ul className="space-y-3 font-bold text-white/90">
+                <li className="flex items-start gap-2"><span className="text-[#FFCD75]">✦</span> Practice through games.</li>
+                <li className="flex items-start gap-2"><span className="text-[#FFCD75]">✦</span> Solve challenges.</li>
+                <li className="flex items-start gap-2"><span className="text-[#FFCD75]">✦</span> Make financial decisions.</li>
+                <li className="flex items-start gap-2"><span className="text-[#FFCD75]">✦</span> Earn rewards.</li>
               </ul>
             </motion.div>
 
@@ -62,9 +62,9 @@ const FeaturesSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: 0.2 }}
-              className="bg-[#18181B] text-white border-[3px] border-[#18181B] dark:border-white rounded-3xl p-8 shadow-[8px_8px_0_#00E599] relative hover:-translate-y-2 transition-transform"
+              className="bg-[#18181B] text-white border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-3xl p-8 shadow-[8px_8px_0_#00E599] relative hover:-translate-y-2 transition-transform"
             >
-              <div className="absolute -top-6 -left-6 w-14 h-14 bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-white rounded-full flex items-center justify-center font-black text-2xl shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF]">3</div>
+              <div className="absolute -top-6 -left-6 w-14 h-14 bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-full flex items-center justify-center font-black text-2xl shadow-[4px_4px_0_#18181B] dark:shadow-[4px_4px_0_#000000]">3</div>
               <h3 className="text-3xl font-black mb-4 mt-2 text-[#00E599]">Apply</h3>
               <ul className="space-y-3 font-bold text-[#A1A1AA]">
                 <li className="flex items-start gap-2"><span className="text-[#00E599]">✦</span> Use your knowledge inside a realistic virtual market simulator.</li>
@@ -115,7 +115,7 @@ const FeaturesSection = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className={`bg-[#F4F4F5] dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-white rounded-2xl p-6 shadow-[6px_6px_0_#18181B] dark:shadow-[#FFFFFF] hover:shadow-[2px_2px_0_#18181B] dark:hover:shadow-[2px_2px_0_#000000] hover:-translate-y-1 transition-colors duration-300 group ${f.bgHover}`}
+                className={`bg-[#F4F4F5] dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-[#3F3F46] rounded-2xl p-6 shadow-[6px_6px_0_#18181B] dark:shadow-[6px_6px_0_#000000] hover:shadow-[2px_2px_0_#18181B] dark:hover:shadow-[2px_2px_0_#000000] hover:-translate-y-1 transition-colors duration-300 group ${f.bgHover}`}
               >
                 <div className={`text-4xl mb-4 text-[#18181B] dark:text-[#F4F4F5] transition-colors duration-300 ${f.textHover}`}>{f.icon}</div>
                 <h4 className={`text-xl font-black mb-2 text-[#18181B] dark:text-[#F4F4F5] transition-colors duration-300 ${f.textHover}`}>{f.title}</h4>
