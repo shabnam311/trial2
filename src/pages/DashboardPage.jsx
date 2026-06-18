@@ -5,7 +5,7 @@ import MilestoneChestsCard from '../components/dashboard/widgets/MilestoneChests
 import FriendActivityCard from '../components/dashboard/widgets/FriendActivityCard';
 import DailyMissionsCard from '../components/dashboard/widgets/DailyMissionsCard';
 import CurrentJourneyCard from '../components/dashboard/widgets/CurrentJourneyCard';
-import RecentAchievementsCard from '../components/dashboard/widgets/RecentAchievementsCard';
+import LeaderboardCard from '../components/dashboard/widgets/LeaderboardCard';
 
 const DashboardPage = () => {
   return (
@@ -28,7 +28,7 @@ const DashboardPage = () => {
           <div className="w-full lg:w-[40%] flex flex-col shrink-0 min-w-0">
             <DailyMissionsCard />
             <MilestoneChestsCard />
-            <RecentAchievementsCard />
+            <LeaderboardCard />
           </div>
 
         </div>
