@@ -7,7 +7,7 @@ const messages = [
 
 const MessagesPanel = () => {
   return (
-    <div className="w-full bg-white dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[6px_6px_0_#8B5CF6] p-6 mb-6 transition-colors">
+    <div className="w-full bg-white dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[6px_6px_0_#8B5CF6] p-6 mb-6 transition-colors flex flex-col flex-1 min-h-0">
       
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
@@ -21,7 +21,7 @@ const MessagesPanel = () => {
       </div>
 
       {/* Messages List */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 flex-1 overflow-y-auto min-h-0 pr-2 hide-scrollbar">
         {messages.map((msg) => (
           <div 
             key={msg.id} 

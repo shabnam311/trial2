@@ -19,7 +19,7 @@ const ProfilePage = () => {
       <div className="max-w-[1400px] mx-auto px-6 py-8">
         
         {/* 2-Column Section */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start mb-6">
+        <div className="flex flex-col lg:flex-row gap-8 items-stretch mb-6">
           
           {/* Left Column */}
           <div className="w-full lg:w-[45%] flex flex-col min-w-0 shrink-0">
