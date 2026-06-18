@@ -31,8 +31,8 @@ const ProfilePage = () => {
 
           {/* Right Column */}
           <div className="w-full lg:w-[55%] flex flex-col min-w-0">
-            <ActivityCalendar />
             <FinancialSkillRadar />
+            <ActivityCalendar />
             <XpGrowthChart />
           </div>
           
