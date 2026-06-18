@@ -15,19 +15,19 @@ const DashboardPage = () => {
 
       {/* Main Content Area */}
       <div className="max-w-[1400px] mx-auto px-6 py-8">
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 items-stretch">
           
           {/* Left Column */}
           <div className="w-full lg:w-[60%] flex flex-col min-w-0">
             <VirtualBalanceCard />
-            <MilestoneChestsCard />
+            <CurrentJourneyCard />
             <FriendActivityCard />
           </div>
 
           {/* Right Column */}
           <div className="w-full lg:w-[40%] flex flex-col shrink-0 min-w-0">
             <DailyMissionsCard />
-            <CurrentJourneyCard />
+            <MilestoneChestsCard />
             <RecentAchievementsCard />
           </div>
 

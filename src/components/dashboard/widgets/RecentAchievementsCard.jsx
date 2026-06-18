@@ -4,7 +4,7 @@ const badges = [];
 
 const RecentAchievementsCard = () => {
   return (
-    <div className="w-full bg-[#00E599] border-[3px] border-[#18181B] dark:border-white shadow-[6px_6px_0_#18181B] dark:shadow-[6px_6px_0_#F4F4F5] p-6 transition-colors">
+    <div className="w-full bg-[#00E599] border-[3px] border-[#18181B] dark:border-white shadow-[6px_6px_0_#18181B] dark:shadow-[6px_6px_0_#F4F4F5] p-6 transition-colors flex flex-col flex-1 min-h-0">
       
       <div className="flex justify-between items-center mb-6">
         <h3 className="font-black text-xl tracking-tight text-[#18181B]">RECENT</h3>
@@ -13,7 +13,7 @@ const RecentAchievementsCard = () => {
         </span>
       </div>
 
-      <div className="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
+      <div className="flex gap-4 overflow-x-auto hide-scrollbar pb-2 flex-1 items-center">
         {badges.length === 0 ? (
           <div className="w-full text-center py-2 text-xs font-bold text-[#18181B]">
             No achievements yet.

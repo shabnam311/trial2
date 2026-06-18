@@ -4,7 +4,7 @@ const activities = [];
 
 const FriendActivityCard = () => {
   return (
-    <div className="w-full bg-white dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[6px_6px_0_#18181B] dark:shadow-[6px_6px_0_#F4F4F5] p-6 mb-6 transition-colors">
+    <div className="w-full bg-white dark:bg-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[6px_6px_0_#18181B] dark:shadow-[6px_6px_0_#F4F4F5] p-6 transition-colors flex flex-col flex-1 min-h-0">
       
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
@@ -21,7 +21,7 @@ const FriendActivityCard = () => {
       </div>
 
       {/* Activity List */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 flex-1 overflow-y-auto hide-scrollbar">
         {activities.length === 0 ? (
           <div className="text-center py-4 text-sm font-['Space_Mono',monospace] text-[#71717A] dark:text-[#A1A1AA]">
             Add friends to see their activity!
