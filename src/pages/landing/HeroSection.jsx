@@ -106,7 +106,7 @@ const HeroSection = () => {
           {/* Header */}
           <div className="flex justify-between items-start mb-8">
             <div className="flex items-stretch gap-4">
-              <div className="aspect-square rounded-2xl bg-[#8B5CF6] border-[3px] border-[#18181B] dark:border-white flex items-center justify-center font-black text-3xl text-white shadow-[#18181B] dark:shadow-[#FFFFFF]">
+              <div className="w-[72px] shrink-0 rounded-2xl bg-[#8B5CF6] border-[3px] border-[#18181B] dark:border-white flex items-center justify-center font-black text-3xl text-white shadow-[#18181B] dark:shadow-[#FFFFFF]">
                 PP
               </div>
               <div>
