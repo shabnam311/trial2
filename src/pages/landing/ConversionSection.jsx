@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check } from 'lucide-react';
@@ -9,8 +10,8 @@ const ConversionSection = () => {
   const faqs = [
     { q: 'What is PiggyPath?', a: 'PiggyPath is a gamified financial learning platform designed to help people learn money skills through interactive experiences.' },
     { q: 'Is PiggyPath free?', a: 'The platform will include both free and premium experiences.' },
-    { q: 'Do I need investment experience?', a: 'No. PiggyPath is built for beginners.' },
-    { q: 'Is real money involved?', a: 'No. Virtual investing uses simulated funds.' },
+    { q: 'Do I need investment experience?', a: 'No, PiggyPath is built for beginners.' },
+    { q: 'Is real money involved?', a: 'No, virtual investing uses simulated funds.' },
     { q: 'When is PiggyPath launching?', a: 'Join the waitlist to stay updated.' },
   ];
 
@@ -111,7 +112,9 @@ const ConversionSection = () => {
               </button>
             </form>
 
-
+            <div className="inline-block bg-[#00E599] text-[#18181B] text-[10px] font-black uppercase px-2 py-0.5">
+               No spam. Unsubscribe anytime.
+            </div>
           </div>
         </div>
       </section>
