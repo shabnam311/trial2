@@ -116,7 +116,7 @@ const HeroSection = () => {
             </div>
             
             <div className="flex flex-col items-end gap-3">
-               <div className="w-12 h-12 rounded-full bg-[#00E599] border-[3px] border-[#18181B] dark:border-white flex items-center justify-center shadow-[#18181B] dark:shadow-[#FFFFFF] relative -top-8 -right-4 font-black text-xl hover:scale-110 transition-transform cursor-pointer">
+               <div className="w-12 h-12 rounded-full bg-[#00E599] border-[3px] border-[#18181B] dark:border-white flex items-center justify-center shadow-[#18181B] dark:shadow-[#FFFFFF] relative -top-8 -right-4 font-black text-xl hover:scale-110 transition-transform cursor-pointer mb-4">
                  $
                </div>
                <div className="px-4 py-2 rounded-xl bg-white dark:bg-[#27272A] border-[3px] border-[#18181B] dark:border-white shadow-[#18181B] dark:shadow-[#FFFFFF] font-bold text-xs flex items-center gap-2">
