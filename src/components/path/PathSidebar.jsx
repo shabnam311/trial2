@@ -2,7 +2,7 @@ import React from 'react';
 
 const PathSidebar = () => {
   return (
-    <div className="w-full lg:w-[35%] flex flex-col gap-6 shrink-0 lg:sticky lg:top-24 h-fit">
+    <div className="w-full flex flex-col gap-6 shrink-0 h-fit">
       
       {/* Title */}
       <h2 className="font-black text-2xl tracking-tight text-[#18181B] dark:text-[#F4F4F5] uppercase mb-2">
