@@ -7,6 +7,7 @@ import PathPage from './pages/PathPage';
 import AvatarSetupPage from './pages/AvatarSetupPage';
 import LandingPage from './pages/landing/LandingPage';
 import SignInPage from './pages/SignInPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         {/* Landing Page */}
         <Route path="/" element={<LandingPage />} />
+        <Route path="/privacy" element={<PrivacyPolicyPage />} />
 
         {/* Auth */}
         <Route path="/signin" element={<SignInPage />} />

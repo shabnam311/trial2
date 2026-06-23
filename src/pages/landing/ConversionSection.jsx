@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { X, Check } from 'lucide-react';
 import Logo from '../../components/common/Logo';
 
@@ -168,7 +169,7 @@ const ConversionSection = () => {
               <ul className="space-y-3 font-bold text-[#71717A]">
                 <li><a href="#" className="hover:text-[#00E599] hover:underline">About</a></li>
                 <li><a href="#" className="hover:text-[#00E599] hover:underline">Contact</a></li>
-                <li><a href="#" className="hover:text-[#00E599] hover:underline">Privacy Policy</a></li>
+                <li><Link to="/privacy" className="hover:text-[#00E599] hover:underline">Privacy Policy</Link></li>
                 <li><a href="#" className="hover:text-[#00E599] hover:underline">Terms of Service</a></li>
               </ul>
             </div>

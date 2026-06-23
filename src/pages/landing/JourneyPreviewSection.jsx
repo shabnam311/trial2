@@ -156,7 +156,7 @@ const JourneyPreviewSection = () => {
           <div className="order-1 lg:order-2">
             <h2 className="text-5xl font-black mb-6">Practice Before You Invest</h2>
             <p className="text-xl font-medium text-[#3F3F46] dark:text-[#A1A1AA] mb-8">
-              Apply everything you've learned in a risk-free virtual market. Trade stocks, build portfolios, and test strategies.
+              Apply everything you have learned in a risk-free virtual market. Trade stocks, build portfolios, and test strategies.
             </p>
             <ul className="space-y-4 text-lg font-bold">
                <li className="flex items-center gap-3"><span className="text-[#00E599] text-2xl">✓</span> Real-time market data.</li>
