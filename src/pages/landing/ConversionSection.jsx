@@ -7,6 +7,27 @@ import Logo from '../../components/common/Logo';
 
 const ConversionSection = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
+  const [email, setEmail] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
+  const handleJoinWaitlist = (e) => {
+    e.preventDefault();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.trim()) {
+      setEmailError('Please enter an email address.');
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      setEmailError('Please enter a valid email address.');
+      return;
+    }
+    
+    // Success!
+    setEmailError('');
+    setShowSuccessModal(true);
+    setEmail(''); // clear input
+  };
 
   const faqs = [
     { q: 'What is PiggyPath?', a: 'PiggyPath is a gamified financial learning platform designed to help people learn money skills through interactive experiences.' },
@@ -97,20 +118,25 @@ const ConversionSection = () => {
               Get early access, product updates, and launch announcements.
             </p>
 
-            <form className="flex flex-col md:flex-row justify-center gap-4 max-w-2xl mx-auto mb-6" onSubmit={e => e.preventDefault()}>
-              <div className="relative flex-1">
-                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-[#71717A]">
-                   <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                 </div>
-                 <input 
-                   type="email" 
-                   placeholder="you@example.com" 
-                   className="w-full pl-12 pr-6 py-4 rounded-xl border-[4px] border-[#18181B] dark:border-white text-[#18181B] dark:text-[#F4F4F5] bg-white dark:bg-[#18181B] font-bold text-lg focus:outline-none focus:ring-4 focus:ring-[#00E599] shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF]"
-                 />
+            <form className="flex flex-col justify-center max-w-2xl mx-auto mb-6 relative" onSubmit={handleJoinWaitlist}>
+              <div className="flex flex-col md:flex-row gap-4 w-full">
+                <div className="relative flex-1">
+                   <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-[#71717A]">
+                     <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                   </div>
+                   <input 
+                     type="email" 
+                     value={email}
+                     onChange={(e) => { setEmail(e.target.value); setEmailError(''); }}
+                     placeholder="you@example.com" 
+                     className={`w-full pl-12 pr-6 py-4 rounded-xl border-[4px] ${emailError ? 'border-red-500' : 'border-[#18181B] dark:border-white'} text-[#18181B] dark:text-[#F4F4F5] bg-white dark:bg-[#18181B] font-bold text-lg focus:outline-none focus:ring-4 focus:ring-[#00E599] shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF]`}
+                   />
+                </div>
+                <button type="submit" className="px-8 py-4 bg-[#00E599] text-[#18181B] border-[4px] border-[#18181B] dark:border-white rounded-xl font-black text-lg shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] hover:-translate-y-1 hover:shadow-[6px_6px_0_#18181B] dark:hover:shadow-[6px_6px_0_#000] transition-all flex items-center justify-center gap-2 w-full md:w-auto">
+                  Join Waitlist <span>→</span>
+                </button>
               </div>
-              <button className="px-8 py-4 bg-[#00E599] text-[#18181B] border-[4px] border-[#18181B] dark:border-white rounded-xl font-black text-lg shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] hover:-translate-y-1 hover:shadow-[6px_6px_0_#18181B] dark:hover:shadow-[6px_6px_0_#000] transition-all flex items-center justify-center gap-2">
-                Join Waitlist <span>→</span>
-              </button>
+              {emailError && <p className="text-red-500 font-bold mt-2 text-left w-full pl-2 absolute -bottom-8">{emailError}</p>}
             </form>
 
 
@@ -196,6 +222,44 @@ const ConversionSection = () => {
           </div>
         </div>
       </footer>
+    </div>
+      <AnimatePresence>
+        {showSuccessModal && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm px-6"
+          >
+            <motion.div 
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              className="bg-white dark:bg-[#27272A] border-[4px] border-[#18181B] dark:border-white rounded-3xl p-8 max-w-md w-full shadow-[8px_8px_0_#00E599] text-center relative"
+            >
+              <button 
+                onClick={() => setShowSuccessModal(false)}
+                className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-[#18181B] text-white hover:bg-red-500 transition-colors"
+              >
+                <X size={16} strokeWidth={3} />
+              </button>
+              <div className="w-16 h-16 bg-[#00E599] rounded-2xl border-[3px] border-[#18181B] flex items-center justify-center mx-auto mb-6 shadow-[4px_4px_0_#18181B]">
+                <Check size={32} className="text-[#18181B]" strokeWidth={3} />
+              </div>
+              <h3 className="text-3xl font-black mb-2 text-[#18181B] dark:text-white">You're on the list!</h3>
+              <p className="font-bold text-[#71717A] dark:text-[#A1A1AA] mb-6">
+                You have been successfully added to the PiggyPath waitlist. Keep an eye on your inbox!
+              </p>
+              <button 
+                onClick={() => setShowSuccessModal(false)}
+                className="w-full py-4 bg-[#18181B] dark:bg-white text-white dark:text-[#18181B] font-black rounded-xl text-lg hover:-translate-y-1 transition-transform"
+              >
+                Awesome!
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
