@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Flame, X, Check } from 'lucide-react';
+import { Flame, X, Check, Coins, Award } from 'lucide-react';
 import { TrophyIcon } from '../../components/profile/ProfileHeader';
 
 const FallingText = ({ text, className }) => {
@@ -145,22 +145,14 @@ const HeroSection = () => {
           <div className="grid grid-cols-3 gap-4 mb-8">
             <div className="bg-[#00E599] border-[3px] border-[#18181B] dark:border-white rounded-2xl p-4 shadow-[#18181B] dark:shadow-[#FFFFFF] hover:-translate-y-1 transition-transform">
                <div className="flex justify-between items-start mb-2">
-                 <svg viewBox="0 0 24 24" fill="none" stroke="#18181B" strokeWidth={2.5} width={20} height={20}>
-                    <circle cx="12" cy="12" r="8"/>
-                    <path d="M12 4v16M8 12h8"/>
-                 </svg>
+                 <Coins size={20} strokeWidth={2.5} color="#18181B" />
                  <span className="text-[10px] font-black tracking-widest text-[#18181B] dark:text-[#F4F4F5]/70">COINS</span>
                </div>
                <div className="text-2xl font-black">2,480</div>
             </div>
             <div className="bg-[#8B5CF6] text-white border-[3px] border-[#18181B] dark:border-white rounded-2xl p-4 shadow-[#18181B] dark:shadow-[#FFFFFF] hover:-translate-y-1 transition-transform">
                <div className="flex justify-between items-start mb-2">
-                 <svg viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth={2.5} width={20} height={20}>
-                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                    <path d="M4 22h16"/>
-                    <path d="M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34"/>
-                 </svg>
+                 <Award size={20} strokeWidth={2.5} color="#FFF" />
                  <span className="text-[10px] font-black tracking-widest text-white/70">BADGES</span>
                </div>
                <div className="text-2xl font-black">14</div>
