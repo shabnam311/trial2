@@ -111,9 +111,7 @@ const ConversionSection = () => {
               </button>
             </form>
 
-            <div className="inline-block bg-[#00E599] text-[#18181B] text-[10px] font-black uppercase px-2 py-0.5">
-               No spam. Unsubscribe anytime.
-            </div>
+
           </div>
         </div>
       </section>
