@@ -71,7 +71,7 @@ const HeroSection = () => {
             PiggyPath turns financial education into an interactive journey where you learn budgeting, investing, wealth building and personal finance through gamified experiences, not boring videos or textbooks.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full">
             <button onClick={() => scrollTo('waitlist')} className="bg-[#00E599] text-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] text-lg lg:text-xl font-black px-6 md:px-8 py-4 rounded-xl transition-transform hover:-translate-y-1 w-full sm:w-auto flex justify-center items-center whitespace-nowrap">
               Join Waitlist →
             </button>
