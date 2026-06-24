@@ -84,17 +84,7 @@ const HeroSection = () => {
             </button>
           </div>
 
-          <div className="flex items-center gap-4 mt-8">
-             <div className="flex -space-x-4">
-                <div className="w-10 h-10 rounded-full border-2 border-[#18181B] dark:border-white bg-[#00E599] shadow-[#18181B] dark:shadow-[#FFFFFF]"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-[#18181B] dark:border-white bg-[#8B5CF6] shadow-[#18181B] dark:shadow-[#FFFFFF]"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-[#18181B] dark:border-white bg-[#18181B] shadow-[#18181B] dark:shadow-[#FFFFFF]"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-[#18181B] dark:border-white bg-white dark:bg-[#27272A] flex items-center justify-center font-bold shadow-[#18181B] dark:shadow-[#FFFFFF]">+</div>
-             </div>
-             <p className="font-bold text-sm text-[#3F3F46] dark:text-[#A1A1AA]">
-               <span className="text-[#18181B] dark:text-[#F4F4F5]">Early builders</span> shaping PiggyPath. <br/>Be one of the first.
-             </p>
-          </div>
+
         </div>
 
         {/* Right Visual: Dashboard Mockup */}
