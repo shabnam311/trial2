@@ -92,7 +92,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: 100, rotate: 5 }}
           animate={{ opacity: 1, x: 0, rotate: 0 }}
           transition={{ duration: 0.8, type: 'spring' }}
-          className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl bg-white dark:bg-[#27272A] border-[4px] border-[#18181B] dark:border-white shadow-[12px_12px_0_#18181B] dark:shadow-[#FFFFFF] p-6 md:p-8"
+          className="relative w-full aspect-square md:aspect-[4/3] rounded-3xl bg-white dark:bg-[#27272A] border-[4px] border-[#18181B] dark:border-white shadow-[12px_12px_0_#18181B] dark:shadow-[#FFFFFF] p-6 md:p-8 lg:scale-[1.15] lg:origin-top-left xl:scale-[1.20] z-10"
         >
           {/* Header */}
           <div className="flex justify-between items-start mb-8">
