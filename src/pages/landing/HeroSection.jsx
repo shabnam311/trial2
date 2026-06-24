@@ -42,7 +42,7 @@ const HeroSection = () => {
       {/* Background dot pattern */}
       <div className="absolute inset-0 z-0 opacity-10" style={{ backgroundImage: 'radial-gradient(#18181B 2px, transparent 2px)', backgroundSize: '24px 24px' }} />
       
-      <div className="max-w-7xl mx-auto px-6 pt-24 pb-20 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 pt-24 pb-20 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:items-start items-center">
         
         {/* Decorative Abstract Star Illustration */}
         <motion.svg 
@@ -71,11 +71,11 @@ const HeroSection = () => {
             PiggyPath turns financial education into an interactive journey where you learn budgeting, investing, wealth building and personal finance through gamified experiences, not boring videos or textbooks.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
-            <button onClick={() => scrollTo('waitlist')} className="bg-[#00E599] text-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] text-xl font-black px-8 py-4 rounded-xl transition-transform hover:-translate-y-1">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full">
+            <button onClick={() => scrollTo('waitlist')} className="bg-[#00E599] text-[#18181B] border-[3px] border-[#18181B] dark:border-white shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] text-lg lg:text-xl font-black px-6 py-4 rounded-xl transition-transform hover:-translate-y-1 w-full sm:w-auto flex justify-center items-center">
               Join Waitlist →
             </button>
-            <button onClick={() => scrollTo('features')} className="bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-white shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] flex items-center gap-2 text-xl font-black px-8 py-4 rounded-xl transition-transform hover:-translate-y-1">
+            <button onClick={() => scrollTo('features')} className="bg-white dark:bg-[#27272A] text-[#18181B] dark:text-[#F4F4F5] border-[3px] border-[#18181B] dark:border-white shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] flex items-center justify-center gap-2 text-lg lg:text-xl font-black px-6 py-4 rounded-xl transition-transform hover:-translate-y-1 w-full sm:w-auto">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} width={24} height={24}>
                 <circle cx="12" cy="12" r="10"/>
                 <polygon points="10 8 16 12 10 16 10 8" fill="#18181B"/>
