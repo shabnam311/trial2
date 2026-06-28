@@ -10,8 +10,9 @@ const ConversionSection = () => {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleJoinWaitlist = (e) => {
+  const handleJoinWaitlist = async (e) => {
     e.preventDefault();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email.trim()) {
@@ -23,10 +24,28 @@ const ConversionSection = () => {
       return;
     }
     
-    // Success!
+    setIsSubmitting(true);
     setEmailError('');
-    setShowSuccessModal(true);
-    setEmail(''); // clear input
+
+    try {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw10ujRrAJkBhdzX1WDiCoLzME1t7ui-YPp5hhta91d1Ld1Z2Hl2F_YDU0brxH5GO4W/exec';
+      await fetch(scriptURL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: new URLSearchParams({ email: email })
+      });
+      
+      // Success!
+      setShowSuccessModal(true);
+      setEmail(''); // clear input
+    } catch (error) {
+      setEmailError('Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const faqs = [
@@ -133,8 +152,8 @@ const ConversionSection = () => {
                      className={`w-full pl-12 pr-6 py-4 rounded-xl border-[4px] ${emailError ? 'border-red-500' : 'border-[#18181B] dark:border-white'} text-[#18181B] dark:text-[#F4F4F5] bg-white dark:bg-[#18181B] font-bold text-lg focus:outline-none focus:ring-4 focus:ring-[#00E599] shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF]`}
                    />
                 </div>
-                <button type="submit" className="px-8 py-4 bg-[#00E599] text-[#18181B] border-[4px] border-[#18181B] dark:border-white rounded-xl font-black text-lg shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] hover:-translate-y-1 hover:shadow-[6px_6px_0_#18181B] dark:hover:shadow-[6px_6px_0_#000] transition-all flex items-center justify-center gap-2 w-full md:w-auto">
-                  Join Waitlist <span>→</span>
+                <button disabled={isSubmitting} type="submit" className={`px-8 py-4 bg-[#00E599] text-[#18181B] border-[4px] border-[#18181B] dark:border-white rounded-xl font-black text-lg shadow-[4px_4px_0_#18181B] dark:shadow-[#FFFFFF] ${isSubmitting ? 'opacity-70 cursor-not-allowed' : 'hover:-translate-y-1 hover:shadow-[6px_6px_0_#18181B] dark:hover:shadow-[6px_6px_0_#000]'} transition-all flex items-center justify-center gap-2 w-full md:w-auto`}>
+                  {isSubmitting ? 'Joining...' : <>Join Waitlist <span>→</span></>}
                 </button>
               </div>
               {emailError && <p className="text-red-500 font-bold mt-2 text-left w-full pl-2 absolute -bottom-8">{emailError}</p>}
