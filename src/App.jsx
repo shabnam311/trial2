@@ -10,8 +10,6 @@ import SignInPage from './pages/SignInPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import GameLibraryPage from './pages/GameLibraryPage';
-import PLBAuthGuard from './pages/admin/PLBAuthGuard';
-import PLBBuilder from './pages/admin/PLBBuilder';
 
 function App() {
   return (
@@ -21,13 +19,6 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/privacy" element={<PrivacyPolicyPage />} />
         <Route path="/terms" element={<TermsOfServicePage />} />
-
-        {/* Secret Admin PLB Route */}
-        <Route path="/secret-plb-admin" element={
-          <PLBAuthGuard>
-            <PLBBuilder />
-          </PLBAuthGuard>
-        } />
 
         {/* Auth */}
         <Route path="/signin" element={<SignInPage />} />
